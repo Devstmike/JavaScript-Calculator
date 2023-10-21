@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-
+     <!-- Aos (Animate on scroll) animation-->
+     <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <section class="wrapper">
@@ -16,31 +21,37 @@
                 <input type="text">
             </div>
             <div class="button">
-                <button value="2">AC</button>
-                <button>DE</button>
-                <button>.</button>
-                <button>/</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>*</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-                <button>00</button>
-                <button>0</button>
-                <button>=</button>
+                <button value="AC">AC</button>
+                <button value="DE">DE</button>
+                <button value=".">.</button>
+                <button value="/">/</button>
+                <button value="7">7</button>
+                <button value="8">8</button>
+                <button value="9">9</button>
+                <button value="*">*</button>
+                <button value="4">4</button>
+                <button value="5">5</button>
+                <button value="6">6</button>
+                <button value="-">-</button>
+                <button value="1">1</button>
+                <button value="2">2</button>
+                <button value="3">3</button>
+                <button value="+">+</button>
+                <button value="0">00</button>
+                <button value="0">0</button>
+                <button value="=">=</button>
             </div>
         </div>
+        <input type="button" placeholder="mike">
     </section>
-    <!-- Welcome mesage-->
-    <section class="welcome">
-        <h1>Welcome to my project</h1>
-    </section>
-</body>
+    
+        Welcome mesage
+        <section class="welcome">
+            <div data-aos="fade-right">d</div>
+            <h1 data-aos="zoom-in">Welcome to my project</h1>
+            <div data-aos="fade-left">d</div>
+        </section>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
+<script>AOS.init({duration:2000})</script>
+</body> 
 </html>
